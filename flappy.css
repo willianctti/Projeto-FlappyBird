@@ -1,0 +1,72 @@
+@charset "UTF-8"; 
+
+    * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        background-color: rgb(11, 53, 95);
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    
+
+    div#flappy {
+        position: relative;
+        border: 5px solid rgb(5, 5, 122);
+        height: 500px;
+        width: 580px;
+        margin: 15px;
+        background-color: deepskyblue;
+        overflow: hidden;
+    }
+
+    .passaro {
+        position: absolute;
+        width: 60px;
+        left: calc(50% - 160px);
+        bottom: 50%;
+
+    }
+
+    .par-de-barreiras {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .barreira {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barreira .borda {
+        height: 30px;
+        width: 130px;
+        background-color: greenyellow;
+        border: 2px solid black;
+    }
+
+    .barreira .corpo {
+        height: 90px;
+        width: 110px;
+        background-color: greenyellow;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+    }
+
+
+    .progresso {
+        position: absolute;
+        top: 10;
+        right: 10px;
+        font-size: 50px;
+        color: white;
+    }
